@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4edf7126-8adf-40ea-b293-293ffb58f820" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Z5EzoW9qE6q82tQSXn90dihhFp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/test" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="sh.w3ss.cm.views" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.FieldTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="sh.w3ss.Main" />
+      <module name="minesweeper" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FieldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="minesweeper" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FieldTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="minesweeper" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="minesweeper" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.FieldTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FieldTest" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4edf7126-8adf-40ea-b293-293ffb58f820" name="Default Changelist" comment="" />
+      <created>1584120819655</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584120819655</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="18" key="#FieldTest.changeMarkInTwoCallsTest" timestamp="1584140307660">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="555" y="18" key="#FieldTest.changeMarkInTwoCallsTest/0.0.1360.728@0.0.1360.728" timestamp="1584140307659" />
+    <state x="544" y="22" key="#Project_Structure" timestamp="1584121035960">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="544" y="22" key="#Project_Structure/0.0.1360.728@0.0.1360.728" timestamp="1584121035960" />
+    <state x="825" y="77" key="#com.intellij.ide.util.MemberChooser" timestamp="1584138293563">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="825" y="77" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1584138293563" />
+    <state x="641" y="105" key="FileChooserDialogImpl" timestamp="1584122793058">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="641" y="105" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1584122793058" />
+    <state width="634" height="222" key="GridCell.Tab.0.bottom" timestamp="1584140360769">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="222" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
+    <state width="634" height="222" key="GridCell.Tab.0.center" timestamp="1584140360769">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="222" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
+    <state width="634" height="222" key="GridCell.Tab.0.left" timestamp="1584140360769">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="222" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
+    <state width="634" height="222" key="GridCell.Tab.0.right" timestamp="1584140360769">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="222" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
+    <state width="634" height="222" key="GridCell.Tab.1.bottom" timestamp="1584140360769">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="222" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
+    <state width="634" height="222" key="GridCell.Tab.1.center" timestamp="1584140360769">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="222" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
+    <state width="634" height="222" key="GridCell.Tab.1.left" timestamp="1584140360769">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="222" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
+    <state width="634" height="222" key="GridCell.Tab.1.right" timestamp="1584140360769">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="222" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
+    <state x="362" y="6" key="SettingsEditor" timestamp="1584122796758">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="362" y="6" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1584122796758" />
+    <state x="836" y="142" key="chooseDestDirectoryDialog" timestamp="1584121553024">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="836" y="142" key="chooseDestDirectoryDialog/0.0.1360.728@0.0.1360.728" timestamp="1584121553024" />
+    <state x="724" y="257" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584130343233">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="724" y="257" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1360.728@0.0.1360.728" timestamp="1584130343233" />
+    <state x="66" y="0" width="607" height="728" key="find.popup" timestamp="1584129298016">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="66" y="0" width="607" height="728" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1584129298016" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sh/w3ss/cm/views/Home.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/FieldTest.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
