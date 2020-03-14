@@ -8,11 +8,11 @@ public class Field {
     private final int line;
     private final int column;
 
-    private boolean openField = false;
-    private boolean minedField = false;
-    private boolean markedField = false;
+    private boolean opened = false;
+    private boolean mined = false;
+    private boolean marked = false;
 
-    private static List<Field> neighborhood = new ArrayList<>();
+    private List<Field> neighborhood = new ArrayList<>();
     private List<FieldObserver> observers = new ArrayList<>();
 
     public Field(int line, int column) {
@@ -20,97 +20,89 @@ public class Field {
         this.column = column;
     }
 
-    public void registerObserver(FieldObserver observer) {
+    public void registryObserver(FieldObserver observer) {
         observers.add(observer);
     }
 
     private void notifyObservers(FieldEvent event) {
-        observers.stream()
-                .forEach(o -> o.EventOccurred(this, event));
+        observers.stream().forEach(o -> {
+                o.eventOccurred(this, event);});
     }
 
-    public boolean addNeighborhood(Field possibleNeighbor) {
-        boolean differentLine = line != possibleNeighbor.line;
-        boolean differentColumn = column != possibleNeighbor.column;
-        boolean diagonalNeighbor = differentLine && differentColumn;
+    boolean addNeighborhood(Field neighbor) {
+            boolean differentLine = line != neighbor.line;
+            boolean differentColumn = column != neighbor.column;
+            boolean diagonalNeighbor = differentLine && differentColumn;
 
-        int deltaLine = Math.abs(line - possibleNeighbor.line);
-        int deltaColumn = Math.abs(column - possibleNeighbor.column);
-        int deltaField = deltaLine + deltaColumn;
+            int deltaLine = Math.abs(line - neighbor.line);
+            int deltaColumn = Math.abs(column - neighbor.column);
+            int deltaField = deltaLine + deltaColumn;
 
-        if (deltaField == 1) {
-            neighborhood.add(possibleNeighbor);
-            return true;
-        } else if (deltaField == 2 && diagonalNeighbor) {
-            neighborhood.add(possibleNeighbor);
-            return true;
-        } else {
-            return false;
-        }
+            if (deltaField == 1 && !diagonalNeighbor) {
+                neighborhood.add(neighbor);
+                return true;
+            } else if (deltaField == 2 && diagonalNeighbor) {
+                neighborhood.add(neighbor);
+                return true;
+            } else {
+                return false;
+            }
     }
 
     public void changeMark() {
-        if(!openField) {
-            markedField = !markedField;
+            if(!opened) {
+                marked = !marked;
 
-            if(markedField) {
-                notifyObservers(FieldEvent.MARK);
-            } else {
-                notifyObservers(FieldEvent.UNMARK);
+                if(marked) {
+                    notifyObservers(FieldEvent.MARK);
+                } else {
+                    notifyObservers(FieldEvent.UNMARK);
+                }
             }
-        }
     }
 
     public boolean openning() {
+        if(!opened && !marked) {
+                if(mined) {
+                    notifyObservers(FieldEvent.EXPLODE);
+                    return true;
+                }
 
-        if(!openField && !markedField) {
-            if(minedField) {
-                notifyObservers(FieldEvent.EXPLODE);
+                setOpen(true);
+
+                if(secureNeighborhood()) {
+                    neighborhood.forEach(v -> v.openning());
+                }
+
                 return true;
-            }
-
-            setOpenField(true);
-
-            if(secureNeighborhood()) {
-                neighborhood.forEach(Field::openning);
-            }
-
-            return true;
-        } else {
+        } else{
             return false;
         }
     }
 
-    public static boolean secureNeighborhood() {
-        return neighborhood.stream().noneMatch(neighbor -> neighbor.minedField);
+    public boolean secureNeighborhood() {
+        return neighborhood.stream().noneMatch(n -> n.mined);
     }
 
-    public void setMinedField() {
-        minedField = true;
+    void setMine() {
+        mined = true;
     }
 
-    public void setOpenField(boolean openField) {
-        this.openField = openField;
-
-        if (openField) {
-            notifyObservers(FieldEvent.OPEN);
-        }
+    void setOpen(boolean opened) {
+        this.opened = opened;
+        if (opened) notifyObservers(FieldEvent.OPEN);
     }
 
-    public boolean isMinedField() {
-        return minedField;
+    public boolean isMined() {
+        return mined;
     }
 
-    public boolean isMarkedField() {
-        return markedField;
+    public boolean isMarked() {
+        return marked;
     }
 
     public boolean isOpened() {
-        return openField;
-    }
-
-    public boolean isClosed() {
-        return !isOpened();
+        return opened;
     }
 
     public int getLine() {
@@ -121,20 +113,20 @@ public class Field {
         return column;
     }
 
-    public boolean reachedGoal() {
-        boolean unhiddenAll = !minedField && openField;
-        boolean protectAll = minedField && markedField;
+    boolean reachedGoal() {
+        boolean unhiddenAll = !mined && opened;
+        boolean protectAll = mined && marked;
         return unhiddenAll || protectAll;
     }
 
     public int minesOnNeighborhood() {
-        return (int) neighborhood.stream().filter(n -> n.minedField).count();
+        return (int) neighborhood.stream().filter(n -> n.mined).count();
     }
 
     void restart() {
-        minedField = false;
-        openField = false;
-        markedField = false;
+        mined = false;
+        opened = false;
+        marked = false;
         notifyObservers(FieldEvent.RESTART);
     }
 }

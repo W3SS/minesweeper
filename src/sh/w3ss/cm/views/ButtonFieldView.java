@@ -13,7 +13,8 @@ import javax.swing.JButton;
 import javax.swing.SwingUtilities;
 
 @SuppressWarnings("serial")
-public class ButtonFieldView extends JButton implements FieldObserver, MouseListener {
+public class ButtonFieldView extends JButton
+        implements FieldObserver, MouseListener {
     private final Color BG_DEFAULT = new Color(184, 184, 184);
     private final Color BG_MARK = new Color(8, 179, 247);
     private final Color BG_EXPLODE = new Color(189, 66, 68);
@@ -22,16 +23,17 @@ public class ButtonFieldView extends JButton implements FieldObserver, MouseList
     private Field field;
 
     public ButtonFieldView(Field field) {
+        this.field = field;
         setBackground(BG_DEFAULT);
         setOpaque(true);
         setBorder(BorderFactory.createBevelBorder(0));
 
         addMouseListener(this);
-        field.registerObserver(this);
+        field.registryObserver(this);
     }
 
     @Override
-    public void EventOccurred(Field field, FieldEvent event) {
+    public void eventOccurred(Field field, FieldEvent event) {
         switch(event) {
             case OPEN:
                 applyStyleOpen();
@@ -59,9 +61,9 @@ public class ButtonFieldView extends JButton implements FieldObserver, MouseList
     }
 
     private void applyStyleExplode() {
-        setBackground(BG_EXPLODE);
-        setForeground(Color.WHITE);
-        setText("X");
+         setBackground(BG_EXPLODE);
+         setForeground(Color.WHITE);
+         setText("X");
     }
 
     private void applyStyleMark() {
@@ -71,44 +73,41 @@ public class ButtonFieldView extends JButton implements FieldObserver, MouseList
     }
 
     private void applyStyleOpen() {
-        setBorder(BorderFactory.createLineBorder(Color.GRAY));
+            setBorder(BorderFactory.createLineBorder(Color.GRAY));
+            if(field.isMined()) {
+                setBackground(BG_EXPLODE);
+                return;
+            }
+            setBackground(BG_DEFAULT);
+            switch (field.minesOnNeighborhood()) {
+                case 1:
+                    setForeground(TEXT_GREEN);
+                    break;
+                case 2:
+                    setForeground(Color.BLUE);
+                    break;
+                case 3:
+                    setForeground(Color.YELLOW);
+                    break;
+                case 4:
+                case 5:
+                case 6:
+                    setForeground(Color.RED);
+                    break;
+                default:
+                    setForeground(Color.PINK);
+            }
 
-        if(field.isMinedField()) {
-            setBackground(BG_EXPLODE);
-            return;
-        }
+            String value = !field.secureNeighborhood() ?
+                    field.minesOnNeighborhood() + "" : "";
 
-        setBackground(BG_DEFAULT);
+            setText(value);
 
-        switch (field.minesOnNeighborhood()) {
-            case 1:
-                setForeground(TEXT_GREEN);
-                break;
-            case 2:
-                setForeground(Color.BLUE);
-                break;
-            case 3:
-                setForeground(Color.YELLOW);
-                break;
-            case 4:
-            case 5:
-            case 6:
-                setForeground(Color.RED);
-                break;
-            default:
-                setForeground(Color.PINK);
-        }
-
-        String value = !field.secureNeighborhood() ?
-                field.minesOnNeighborhood() + "" : "";
-        setText(value);
     }
-
-
 
     @Override
     public void mousePressed(MouseEvent e) {
-        if(e.getButton() == 1) {
+        if (e.getButton() == 1) {
             field.openning();
         } else {
             field.changeMark();
@@ -116,7 +115,6 @@ public class ButtonFieldView extends JButton implements FieldObserver, MouseList
     }
 
     public void mouseClicked(MouseEvent e) {}
-
     public void mouseEntered(MouseEvent e) {}
     public void mouseExited(MouseEvent e) {}
     public void mouseReleased(MouseEvent e) {}

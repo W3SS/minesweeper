@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4edf7126-8adf-40ea-b293-293ffb58f820" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sh/w3ss/cm/models/ExplosionExceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sh/w3ss/cm/models/GetOut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sh/w3ss/cm/models/SystemLogging.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sh/w3ss/cm/views/PanelTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/sh/w3ss/cm/exceptions/ExplosionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/sh/w3ss/cm/exceptions/LeaveException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/sh/w3ss/cm/models/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/minesweeper/sh/w3ss/cm/models/Field.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/sh/w3ss/cm/models/FieldObserver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/minesweeper/sh/w3ss/cm/models/FieldObserver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/sh/w3ss/cm/models/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/minesweeper/sh/w3ss/cm/models/Table.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/sh/w3ss/cm/views/ButtonFieldView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/minesweeper/sh/w3ss/cm/views/ButtonFieldView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/sh/w3ss/cm/views/ButtonFieldView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/minesweeper/sh/w3ss/cm/views/ButtonFieldView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/minesweeper/sh/w3ss/cm/views/Panel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/minesweeper/FieldTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/minesweeper/FieldTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sh/w3ss/cm/exceptions/ExplosionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sh/w3ss/cm/exceptions/LeaveException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sh/w3ss/cm/models/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sh/w3ss/cm/models/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sh/w3ss/cm/models/FieldObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sh/w3ss/cm/models/FieldObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sh/w3ss/cm/models/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sh/w3ss/cm/models/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sh/w3ss/cm/views/ButtonFieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sh/w3ss/cm/views/ButtonFieldView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sh/w3ss/cm/views/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sh/w3ss/cm/views/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sh/w3ss/cm/views/Panel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/FieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/FieldTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +43,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/W3SS/minesweeper.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1Z5EzoW9qE6q82tQSXn90dihhFp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -45,9 +74,25 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="sh.w3ss.cm.views" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sh.w3ss.cm.models" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.FieldTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.Home">
+    <configuration name="Home" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sh.w3ss.cm.views.Home" />
+      <module name="minesweeper" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sh.w3ss.cm.views.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sh.w3ss.Main" />
       <module name="minesweeper" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -66,61 +111,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+    <configuration name="FieldTest.changeMarkInTwoCallsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="minesweeper" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FieldTest" />
+      <option name="METHOD_NAME" value="changeMarkInTwoCallsTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+    <configuration name="FieldTest.openOneNeighborsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="minesweeper" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FieldTest" />
+      <option name="METHOD_NAME" value="openOneNeighborsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FieldTest.openWithTwoNeighborsTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="minesweeper" />
+      <useClassPathOnly />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FieldTest" />
+      <option name="METHOD_NAME" value="openWithTwoNeighborsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Home" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.FieldTest.openWithTwoNeighborsTest" />
       <item itemvalue="JUnit.FieldTest" />
+      <item itemvalue="JUnit.FieldTest.changeMarkInTwoCallsTest" />
+      <item itemvalue="JUnit.FieldTest.openOneNeighborsTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FieldTest.openOneNeighborsTest" />
+        <item itemvalue="JUnit.FieldTest.changeMarkInTwoCallsTest" />
         <item itemvalue="JUnit.FieldTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -137,63 +172,88 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="555" y="18" key="#FieldTest.changeMarkInTwoCallsTest" timestamp="1584140307660">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="555" y="18" key="#FieldTest.changeMarkInTwoCallsTest/0.0.1360.728@0.0.1360.728" timestamp="1584140307659" />
+    <state x="555" y="18" key="#FieldTest.openWithTwoNeighborsTest" timestamp="1584141933587">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="555" y="18" key="#FieldTest.openWithTwoNeighborsTest/0.0.1360.728@0.0.1360.728" timestamp="1584141933587" />
     <state x="544" y="22" key="#Project_Structure" timestamp="1584121035960">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="544" y="22" key="#Project_Structure/0.0.1360.728@0.0.1360.728" timestamp="1584121035960" />
-    <state x="825" y="77" key="#com.intellij.ide.util.MemberChooser" timestamp="1584138293563">
+    <state x="773" y="100" width="494" height="535" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1584142020032">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="825" y="77" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1584138293563" />
+    <state x="773" y="100" width="494" height="535" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1360.728@0.0.1360.728" timestamp="1584142020032" />
+    <state x="825" y="77" key="#com.intellij.ide.util.MemberChooser" timestamp="1584165941582">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="825" y="77" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1584165941582" />
     <state x="641" y="105" key="FileChooserDialogImpl" timestamp="1584122793058">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="641" y="105" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1584122793058" />
-    <state width="634" height="222" key="GridCell.Tab.0.bottom" timestamp="1584140360769">
+    <state width="634" height="180" key="GridCell.Tab.0.bottom" timestamp="1584205441070">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="634" height="222" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
-    <state width="634" height="222" key="GridCell.Tab.0.center" timestamp="1584140360769">
+    <state width="634" height="180" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584205441070" />
+    <state width="634" height="180" key="GridCell.Tab.0.center" timestamp="1584205441070">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="634" height="222" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
-    <state width="634" height="222" key="GridCell.Tab.0.left" timestamp="1584140360769">
+    <state width="634" height="180" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1584205441070" />
+    <state width="634" height="180" key="GridCell.Tab.0.left" timestamp="1584205441069">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="634" height="222" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
-    <state width="634" height="222" key="GridCell.Tab.0.right" timestamp="1584140360769">
+    <state width="634" height="180" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1584205441069" />
+    <state width="634" height="180" key="GridCell.Tab.0.right" timestamp="1584205441070">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="634" height="222" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
-    <state width="634" height="222" key="GridCell.Tab.1.bottom" timestamp="1584140360769">
+    <state width="634" height="180" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1584205441070" />
+    <state width="634" height="193" key="GridCell.Tab.1.bottom" timestamp="1584202579134">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="634" height="222" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
-    <state width="634" height="222" key="GridCell.Tab.1.center" timestamp="1584140360769">
+    <state width="634" height="193" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584202579134" />
+    <state width="634" height="193" key="GridCell.Tab.1.center" timestamp="1584202579134">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="634" height="222" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
-    <state width="634" height="222" key="GridCell.Tab.1.left" timestamp="1584140360769">
+    <state width="634" height="193" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1584202579134" />
+    <state width="634" height="193" key="GridCell.Tab.1.left" timestamp="1584202579134">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="634" height="222" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
-    <state width="634" height="222" key="GridCell.Tab.1.right" timestamp="1584140360769">
+    <state width="634" height="193" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1584202579134" />
+    <state width="634" height="193" key="GridCell.Tab.1.right" timestamp="1584202579134">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="634" height="222" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1584140360769" />
-    <state x="362" y="6" key="SettingsEditor" timestamp="1584122796758">
+    <state width="634" height="193" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1584202579134" />
+    <state x="444" y="6" width="916" height="715" key="SettingsEditor" timestamp="1584146239878">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="362" y="6" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1584122796758" />
+    <state x="444" y="6" width="916" height="715" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1584146239878" />
     <state x="836" y="142" key="chooseDestDirectoryDialog" timestamp="1584121553024">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="836" y="142" key="chooseDestDirectoryDialog/0.0.1360.728@0.0.1360.728" timestamp="1584121553024" />
+    <state x="716" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584201598517">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="716" y="188" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1584201598517" />
     <state x="724" y="257" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584130343233">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -202,21 +262,5 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="66" y="0" width="607" height="728" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1584129298016" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sh/w3ss/cm/views/Home.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/FieldTest.java</url>
-          <line>131</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

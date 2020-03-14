@@ -14,12 +14,13 @@ public class Table implements FieldObserver {
     private final List<Field> fields = new ArrayList<>();
     private final List<Consumer<ResultEvent>> observers = new ArrayList<>();
 
+
     public Table(int lines, int columns, int mines) {
         this.lines = lines;
         this.columns = columns;
         this.mines = mines;
 
-        generateField();
+        generateFields();
         associateNeighborhood();
         sortingMines();
     }
@@ -33,25 +34,28 @@ public class Table implements FieldObserver {
     }
 
     private void notifyObservers(boolean result) {
-        observers.stream().forEach(o -> o.accept(new ResultEvent(result)));
+        observers.stream().forEach(o ->
+                o.accept(new ResultEvent(result)));
     }
 
-    public void setOpen(int line, int column) {
-        fields.parallelStream().filter(c -> c.getLine() == line && c.getColumn() == column).findFirst()
-                .ifPresent(c -> c.setOpenField(true));
+    public void openning(int line, int column) {
+        fields.parallelStream()
+            .filter(c -> c.getLine() == line && c.getColumn() == column)
+            .findFirst().ifPresent(c -> c.openning());
     }
 
-    public void changeMarked(int line, int column) {
-        fields.parallelStream().filter(c -> c.getLine() == line && c.getColumn() == column).findFirst()
-                .ifPresent(c -> c.changeMark());
+    public void changeMark(int line, int column) {
+        fields.parallelStream()
+                .filter(c -> c.getLine() == line && c.getColumn() == column)
+                .findFirst().ifPresent(c -> c.changeMark());
     }
 
-    private void generateField() {
+    private void generateFields() {
         for (int line = 0; line < lines; line++) {
             for (int column = 0; column < columns; column++) {
-                Field field = new Field(line, column);
-                field.registerObserver(this);
-                fields.add(field);
+                 Field field = new Field(line, column);
+                 field.registryObserver(this);
+                 fields.add(field);
             }
         }
     }
@@ -66,16 +70,15 @@ public class Table implements FieldObserver {
 
     private void sortingMines() {
         long armedMines = 0;
-        Predicate<Field> mined = c -> c.isMinedField();
-
+        Predicate<Field> mined = c -> c.isMined();
         do {
             int random = (int) (Math.random() * fields.size());
-            fields.get(random).setMinedField();
+            fields.get(random).setMine();
             armedMines = fields.stream().filter(mined).count();
         } while (armedMines < mines);
     }
 
-    public boolean reachedGoal() {
+    public boolean goalValidation() {
         return fields.stream().allMatch(c -> c.reachedGoal());
     }
 
@@ -84,28 +87,23 @@ public class Table implements FieldObserver {
         sortingMines();
     }
 
-    public int getLines() {
-        return lines;
-    }
-
-    public int getColumns() {
-        return columns;
-    }
+    public int getLines() { return lines;}
+    public int getColumns() { return columns;}
 
     @Override
-    public void EventOccurred(Field field, FieldEvent event) {
+    public void eventOccurred(Field field, FieldEvent event) {
         if (event == FieldEvent.EXPLODE) {
             showMines();
             notifyObservers(false);
-        } else if (field.reachedGoal()) {
+        } else if (goalValidation()) {
             notifyObservers(true);
         }
     }
 
     private void showMines() {
         fields.stream()
-                .filter(c -> c.isMinedField())
-                .filter(c -> !c.isMarkedField())
-                .forEach(c -> c.setOpenField(true));
+                .filter(c -> c.isMined())
+                .filter(c -> !c.isMarked())
+                .forEach(c -> c.setOpen(true));
     }
 }

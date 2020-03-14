@@ -8,14 +8,14 @@ import javax.swing.JFrame;
 public class Home extends JFrame {
 
     public Home() {
-        Table tabletop = new Table(16, 30, 50);
-        add(new Panel(tabletop));
+            Table tableTop = new Table(16, 30, 50);
+            add(new PanelTable(tableTop));
 
-        setTitle("Minesweeper");
-        setSize(690, 438);
-        setLocationRelativeTo(null);
-        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        setVisible(true);
+            setTitle("Minesweeper");
+            setSize(690, 438);
+            setLocationRelativeTo(null);
+            setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+            setVisible(true);
     }
 
     public static void main(String[] args) {

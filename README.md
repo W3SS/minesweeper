@@ -1,3 +1,3 @@
-# Minesweeper Project
+# Minesweeper
 
-A Java project using Swing, SoC and MVC to define layers.
+A simple Java Swing game using observer pattern to watch mouse events.
